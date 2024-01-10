@@ -143,25 +143,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: Burst Rifle
-  WeaponIcon: {fileID: 0}
+  WeaponIcon: {fileID: 21300000, guid: cab1398a10b307b44b0ffeb0eef23254, type: 3}
   CrosshairDataDefault:
-    CrosshairSprite: {fileID: 0}
-    CrosshairSize: 0
-    CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
+    CrosshairSprite: {fileID: 21300000, guid: e881aa18189b12f4e915fc5b14ddc421, type: 3}
+    CrosshairSize: 50
+    CrosshairColor: {r: 0.990566, g: 0.4719206, b: 0.9478411, a: 0}
   CrosshairDataTargetInSight:
     CrosshairSprite: {fileID: 0}
     CrosshairSize: 0
     CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
-  WeaponRoot: {fileID: 0}
-  WeaponMuzzle: {fileID: 0}
-  ShootType: 0
-  ProjectilePrefab: {fileID: 0}
-  DelayBetweenShots: 0.5
-  BulletSpreadAngle: 0
-  BulletsPerShot: 1
+  WeaponRoot: {fileID: 7545135647805411475}
+  WeaponMuzzle: {fileID: 1054393618094291690}
+  ShootType: 1
+  ProjectilePrefab: {fileID: 1736008246597011299, guid: 4348f95366020904fb5252c4a92f342b,
+    type: 3}
+  DelayBetweenShots: 0.05
+  BulletSpreadAngle: 0.5
+  BulletsPerShot: 3
   RecoilForce: 1
-  AimZoomRatio: 1
-  AimOffset: {x: 0, y: 0, z: 0}
+  AimZoomRatio: 0.25
+  AimOffset: {x: 0, y: 0.13, z: 0}
   AutomaticReload: 1
   HasPhysicalBullets: 0
   ClipSize: 30
@@ -169,22 +170,54 @@ MonoBehaviour:
   EjectionPort: {fileID: 0}
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
-  AmmoReloadRate: 1
-  AmmoReloadDelay: 2
-  MaxAmmo: 8
+  AmmoReloadRate: 99999
+  AmmoReloadDelay: 0.7
+  MaxAmmo: 30
   AutomaticReleaseOnCharged: 0
   MaxChargeDuration: 2
   AmmoUsedOnStartCharge: 1
   AmmoUsageRateWhileCharging: 1
   WeaponAnimator: {fileID: 0}
-  MuzzleFlashPrefab: {fileID: 0}
+  MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 3f5b545b9a1e74c418b061bba5bb9e2c,
+    type: 3}
   UnparentMuzzleFlash: 0
-  ShootSfx: {fileID: 0}
-  ChangeWeaponSfx: {fileID: 0}
+  ShootSfx: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+  ChangeWeaponSfx: {fileID: 8300000, guid: 6f3e0904bbbace745bdef08cdbcdfec0, type: 3}
   UseContinuousShootSound: 0
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
+--- !u!1 &7676966073361359391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054393618094291690}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054393618094291690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676966073361359391}
+  m_LocalRotation: {x: -0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.003, y: 0.0020000085, z: 0.26899996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7545135647805377715}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7545135647805511219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -245,6 +278,12 @@ PrefabInstance:
 --- !u!4 &7545135647805377715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7545135647805511219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7545135647805411475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b4d38a4c16d22ed45a2737e98d24e63a,
     type: 3}
   m_PrefabInstance: {fileID: 7545135647805511219}
   m_PrefabAsset: {fileID: 0}

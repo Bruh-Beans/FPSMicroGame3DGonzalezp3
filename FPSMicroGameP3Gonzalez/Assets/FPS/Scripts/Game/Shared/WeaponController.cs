@@ -28,7 +28,7 @@ namespace Unity.FPS.Game
     [RequireComponent(typeof(AudioSource))]
     public class WeaponController : MonoBehaviour
     {
-        [Header("Information")] [Tooltip("The name that will be displayed in the UI for this weapon")]
+        [Header("Information")][Tooltip("The name that will be displayed in the UI for this weapon")]
         public string WeaponName;
 
         [Tooltip("The image that will be displayed in the UI for this weapon")]
@@ -47,7 +47,7 @@ namespace Unity.FPS.Game
         [Tooltip("Tip of the weapon, where the projectiles are shot")]
         public Transform WeaponMuzzle;
 
-        [Header("Shoot Parameters")] [Tooltip("The type of weapon wil affect how it shoots")]
+        [Header("Shoot Parameters")][Tooltip("The type of weapon wil affect how it shoots")]
         public WeaponShootType ShootType;
 
         [Tooltip("The projectile prefab")] public ProjectileBase ProjectilePrefab;
@@ -61,10 +61,10 @@ namespace Unity.FPS.Game
         [Tooltip("Amount of bullets per shot")]
         public int BulletsPerShot = 1;
 
-        [Tooltip("Force that will push back the weapon after each shot")] [Range(0f, 2f)]
+        [Tooltip("Force that will push back the weapon after each shot")][Range(0f, 2f)]
         public float RecoilForce = 1;
 
-        [Tooltip("Ratio of the default FOV that this weapon applies while aiming")] [Range(0f, 1f)]
+        [Tooltip("Ratio of the default FOV that this weapon applies while aiming")][Range(0f, 1f)]
         public float AimZoomRatio = 1f;
 
         [Tooltip("Translation to apply to weapon arm when aiming with this weapon")]
@@ -75,7 +75,7 @@ namespace Unity.FPS.Game
         public bool AutomaticReload = true;
         [Tooltip("Has physical clip on the weapon and ammo shells are ejected when firing")]
         public bool HasPhysicalBullets = false;
-        [Tooltip("Number of bullets in a clip")]
+        [Tooltip("Number of bullets in a clip")] [Range(0f, 1000f)]
         public int ClipSize = 30;
         [Tooltip("Bullet Shell Casing")]
         public GameObject ShellCasing;
@@ -92,6 +92,7 @@ namespace Unity.FPS.Game
         public float AmmoReloadDelay = 2f;
 
         [Tooltip("Maximum amount of ammo in the gun")]
+[Range(0f, 1000f)]
         public int MaxAmmo = 8;
 
         [Header("Charging parameters (charging weapons only)")]
